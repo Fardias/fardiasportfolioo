@@ -9,11 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-[#F6F1F1] font-[poppins] xl:bg-[#F6F1F1]">
     <!-- Header start -->
-    <header class="HEADER w-full lg:px-52">
+    <header class="HEADER w-full lg:px-52" id="navbar">
         <div class="container lg:relative sm:mx-auto">
             <div class="ITEMS px-4 py-4 flex justify-between relative lg:px-0 flex-col lg:flex-row">
                 <div class="flex justify-between">
@@ -141,7 +143,10 @@
                     <h1 class="text-[#19A7CE] font-bold text-lg mb-2 sm:text-2xl">Mari Berteman</h1>
                     <p class="text-slate-700 sm:text-lg">Saya juga Aktif diberbagai Sosial Media untuk mengupdate keseharian dan
                         menuangkan berbagai kreativitas.</p>
-
+                    <div class="border-style bg-[#19A7CE] py-4 px-2 rounded-lg shadow-lg text-white text-lg w-[75%] mt-4 border-2 border-transparent transition-all duration-300 hover:translate-x-4 hover:bg-transparent hover:text-[#19A7CE] hover:border-2 hover:border-[#19A7CE]">
+                        <a href="
+                        #medsos">Lihat Sosial Media (≧∇≦)</a>
+                    </div>
 
                 </div>
             </div>
@@ -349,7 +354,7 @@
 
 
     <!-- footer start -->
-    <footer class="w-full text-white px-4 xl:px-52 md:px-40 bg-[#146C94]">
+    <footer class="w-full text-white px-4 xl:px-52 md:px-40 bg-[#146C94] " id="footer">
         <div class="container flex flex-col sm:flex-row sm:justify-evenly sm:pl-14 md:pl-0 ">
 
             <div class="flex flex-col mt-14">
@@ -375,7 +380,13 @@
     </footer>
     <!-- footer end -->
 
-
+    <!-- nav arrow -->
+    <div class="relative">
+        <div class="flex flex-col text-4xl fixed top-[88%] right-10">
+            <a href="#navbar"><i class="ri-arrow-up-circle-fill text-[#3098c8] hover:opacity-75"></i></a>
+            <a href="#footer"><i class="ri-arrow-down-circle-fill  text-[#3098c8] hover:opacity-75"></i></a>
+        </div>
+    </div>
 
     <script src="index.js"></script>
 </body>
